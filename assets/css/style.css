@@ -332,9 +332,11 @@ hr {
     top: 0;
     width: 101%;
     height: 101%;
+    color: #fff;
+    background: #132573;
     z-index: 1;
     border-radius: 5px;
-    transition: transform 0.5s;
+    transition: transform 1s;
     transition-timing-function: ease;
     transform-origin: 0 0;
     transition-timing-function: cubic-bezier(0.5, 1.6, 0.4, 0.7);
@@ -2278,7 +2280,7 @@ color: #000;
     text-transform: capitalize;
 }
 .main-header .main-menu ul li:hover > a {
-    color: #132573;
+    color: #fff;
 }
 .main-header .main-menu ul ul.submenu {
     position: absolute;
@@ -6259,7 +6261,7 @@ font-size: 36px;
 }
 
 .fund-price-donor span {
-    font-size: 40px!important;
+    font-size: 38px!important;
     color: #4255a4 !important;
 }
 
@@ -6273,7 +6275,9 @@ font-size: 36px;
 }
 .donate-btn{
     cursor: pointer;
+
 }
+
 .donation-methods{
     margin: 10px 0px;
 }
@@ -6371,6 +6375,83 @@ height: 35px;
   }
   
   
+
+
+  .animate
+  {
+      transition: all 0.1s;
+      -webkit-transition: all 0.1s;
+  }
+  
+.action-button:active
+{
+	transform: translate(0px,2px);
+  -webkit-transform: translate(0px,2px);
+	border-bottom: 1px solid;
+}
+  
+  .action-button
+  {
+    position: relative;
+    padding: 5px 30px;
+    margin: 0px 10px 10px 0px;
+    float: left;
+    border-radius: 50px;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 13px;
+      color: #000;
+      text-decoration: none;	
+  }
+  .donate-btn-mini{
+    position: relative;
+    padding: 10px 40px;
+    margin: 0px 10px 10px 0px;
+    float: left;
+    border-radius: 10px;
+    font-size: 16px;
+      color: #000;
+      text-decoration: none;	
+
+    font-weight: bold;
+  }
+  .donate-btn-div a:hover{
+    text-decoration: none!important;	
+  }
+  .blue
+  {
+      border: 1px solid #4255a4  ;
+      border-bottom: 4px solid #4255a4   ;
+      
+  }
+  
+ 
+
+  .input_field .input-group {
+    width: 100%;
+    border: 1px solid #4255a4 ;
+    border-radius: 7px;
+    padding: 5px 10px;
+    -webkit-box-shadow: 0 3px 6px rgb(0 0 0 / 16%);
+    -moz-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+    box-shadow: 0 3px 6px rgb(0 0 0 / 16%);
+}
+.input_field .input-group .form-control {
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+    border-bottom: 0;
+    border-top: 0;
+    border-radius: 0;
+    border-right: 0;
+    padding: 0 0 0 25px;
+    max-height: 31px!important;
+    min-height: 29px !important;
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    color: #000;
+}
+.other-amount{
+    margin: 5px 0px 10px 0px;
+}
+
 [class^="ti-"], [class*=" ti-"] {
     line-height: 2;
 }
@@ -6716,13 +6797,13 @@ section.trend-fund {
     margin-top: -41px;
 }
 article.card-group-item {
-    border: 1px solid #f6a137;
+    border: 1px solid #fbcc54;
     border-radius: 4px;
     box-shadow: 0 0.25rem 0.75rem rgb(0 0 0 / 5%);
    
 }
 .card-contribute {
-    background-color: #f6a137 !important;
+    background-color: #ffcc53 !important;
     text-align: center;
     color: #fff;
     padding: 13px;
@@ -6735,7 +6816,7 @@ article.card-group-item {
 }
 .card-contribute h6.title {
     font-size: 19px;
-    color: #fff !important;
+    color: #000 !important;
 }
 .trend-fund .row:after {
   content: "";

@@ -350,7 +350,91 @@
           </div>
         </div>
 
-
+        <div id="myModal" class="modal fade">
+          <div class="modal-dialog modal-login">
+              <div class="modal-content">
+                 
+                  <div class="modal-body start">
+                       <div class="modal-header">              
+                   
+                      <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                  </div>
+                    <div class="signup-form">
+          <form action="/examples/actions/confirmation.php" method="post">
+              <h2>Start your fundraiser</h2>
+             
+              <hr>
+              <div class="form-group">
+                  <div class="input-group">
+                      <div class="input-group-prepend">
+                          <span class="input-group-text">
+                              <span class="fa fa-user"></span>
+                          </span>                    
+                      </div>
+                      <input type="text" class="form-control" name="username" placeholder="Name" required="required">
+                  </div>
+              </div>
+      
+              <div class="form-group">
+                  <div class="input-group">
+                      <div class="input-group-prepend">
+                          <span class="input-group-text">
+                              <i class="fa fa-phone"></i>
+                          </span>                    
+                      </div>
+                      <input type="text" class="form-control" name="phone" placeholder="Phone No." required="required">
+                  </div>
+              </div>
+      
+              <div class="form-group">
+                  <div class="input-group">
+                      <div class="input-group-prepend">
+                          <span class="input-group-text">
+                              <i class="fa fa-paper-plane"></i>
+                          </span>                    
+                      </div>
+                      <input type="email" class="form-control" name="email" placeholder="Email Address" required="required">
+                  </div>
+              </div>
+              <div class="form-group">
+                  <div class="input-group">
+                      <div class="input-group-prepend">
+                          <span class="input-group-text">
+                              <i class="fa fa-lock"></i>
+                          </span>                    
+                      </div>
+                      <input type="text" class="form-control" name="password" placeholder="Password" required="required">
+                  </div>
+              </div>
+            
+      
+               <div class="form-group">
+                  <div class="input-group">
+                  
+      <select name="purpose">
+      <option value="January"> Medical Treatment </option>
+      <option value="Febuary">NGO / Charity</option>
+      <option value="March">Other Cause </option>
+      
+      </select>
+                  </div>
+              </div>
+              <div class="form-group">
+                  <label class="form-check-label"><p>Already have an account? <a href="#">Login</a> </p></label>
+              </div>
+              <div class="form-group">
+                 <a href="fundraiser-form.html" class="btn">Start Now</a>
+              </div>
+                <div >Are you an NGO? <a href="#">Apply here</a></div>
+          </form>
+        
+      </div>            
+                     
+                  </div>
+              </div>
+          </div>
+      </div>    
+      
 
         
  <section class="sec-padd heading bg-grey">
@@ -438,7 +522,7 @@
 
           <div class="col-md-4">
  <article class="card-group-item donate-btn">
-    <header class="card-contribute green-bg"><h6 class="title">Donate Now</h6></header>
+    <header class="card-contribute green-bg"><a href="#myModall" class="trigger-btn" data-toggle="modal"><h6 class="title">Donate Now</h6></a></header>
   </article>
   <div class="donation-methods d-flex justify-content-between">
       <a href="#"><img class="padd-r-10" src="assets/img/credit-card.svg"><br>credit/debit cards</a>
@@ -722,7 +806,7 @@
 
 
 
-<div id="myModal" class="modal fade">
+<div id="myModall" class="modal fade">
     <div class="modal-dialog modal-login">
         <div class="modal-content">
            
@@ -733,9 +817,33 @@
             </div>
               <div class="signup-form">
     <form action="/examples/actions/confirmation.php" method="post">
-        <h2>Start your fundraiser</h2>
-       
+        <h2>Make a Donation</h2>
         <hr>
+        <div class="single_amount">
+          <div class="fixed_donat d-flex align-items-center justify-content-between">
+               <div class="single_doonate"> 
+                   <button class="action-button shadow animate blue">1000</button>
+               </div>
+               <div class="single_doonate"> 
+                <button class="action-button shadow animate blue">1500</button>
+               </div>
+               <div class="single_doonate"> 
+                <button class="action-button shadow animate blue">3000</button>
+               </div>
+          </div>
+        </div>
+
+        <h4 class="text-center text-dark">Other Amount</h4>
+        <div class="single_amount other-amount d-flex align-items-center justify-content-center">
+          <div class="input_field">
+              <div class="input-group">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text" id="basic-addon1">$</span>
+                  </div>
+                  <input type="text" class="form-control" placeholder="40,200" aria-label="Username" aria-describedby="basic-addon1">
+                </div>
+          </div>
+      </div>
         <div class="form-group">
             <div class="input-group">
                 <div class="input-group-prepend">
@@ -768,36 +876,13 @@
                 <input type="email" class="form-control" name="email" placeholder="Email Address" required="required">
             </div>
         </div>
-        <div class="form-group">
-            <div class="input-group">
-                <div class="input-group-prepend">
-                    <span class="input-group-text">
-                        <i class="fa fa-lock"></i>
-                    </span>                    
-                </div>
-                <input type="text" class="form-control" name="password" placeholder="Password" required="required">
-            </div>
-        </div>
       
-
-         <div class="form-group">
-            <div class="input-group">
-            
-<select name="purpose">
-<option value="January"> Medical Treatment </option>
-<option value="Febuary">NGO / Charity</option>
-<option value="March">Other Cause </option>
-
-</select>
+        <div class="form-group">
+            <div class="d-flex align-items-center justify-content-center donate-btn-div">
+              <a href="fundraiser-form.html" class="shadow animate blue donate-btn-mini">Donate Now</a>
             </div>
+          
         </div>
-        <div class="form-group">
-            <label class="form-check-label"><p>Already have an account? <a href="#">Login</a> </p></label>
-        </div>
-        <div class="form-group">
-          <a href="fundraiser-form.html" class="btn">Start Now</a>
-        </div>
-          <div >Are you an NGO? <a href="#">Apply here</a></div>
     </form>
   
 </div>            
