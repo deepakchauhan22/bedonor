@@ -332,7 +332,7 @@ hr {
     top: 0;
     width: 101%;
     height: 101%;
-    color: #fff;
+    color: #000;
     background: #132573;
     z-index: 1;
     border-radius: 5px;
@@ -2280,7 +2280,7 @@ color: #000;
     text-transform: capitalize;
 }
 .main-header .main-menu ul li:hover > a {
-    color: #fff;
+    color: #000;
 }
 .main-header .main-menu ul ul.submenu {
     position: absolute;
@@ -6329,6 +6329,35 @@ height: 35px;
     display: inline;
  }
 
+ @media (min-width: 200px) and (max-width: 575px) {
+    .campaigner-beneficiary {
+        text-align: center;
+        margin: 5px 
+    }
+  }
+ @media (min-width: 576px) and (max-width: 767.98px) {
+    .campaigner-beneficiary {
+        text-align: center;
+    }
+  }
+  
+  @media (min-width: 768px) and (max-width: 991.98px) {
+    .slide-box img {
+      -ms-flex: 0 0 33.3333%;
+      flex: 0 0 33.3333%;
+      max-width: 33.3333%;
+    }
+  }
+  
+  @media (min-width: 992px)
+  {
+    .slide-box img {
+      -ms-flex: 0 0 25%;
+      flex: 0 0 25%;
+      max-width: 25%;
+    }
+  }
+  
 
  .donation-page-footer{
      text-align: center;
@@ -6417,13 +6446,23 @@ height: 35px;
   .donate-btn-div a:hover{
     text-decoration: none!important;	
   }
+  .verified-payment h5{
+    display: inline-block;
+    text-decoration: none!important;	
+  }
+ 
   .blue
   {
+    cursor: pointer;
       border: 1px solid #4255a4  ;
       border-bottom: 4px solid #4255a4   ;
+      background: #fff;
       
   }
-  
+  .action-button.shadow.animate.blue.active{
+      color:#000;
+      background: #E5E7E9;
+  }
  
 
   .input_field .input-group {
@@ -8212,10 +8251,25 @@ select.currency-switcher {
     top: 6px
 }
 .trust-clint {
-    border: 1px dashed;
+ 
     border-radius: 4px;
     padding: 15px;
 }
+.bor-l-2 {
+    border-left: 2px solid #ffcc53;
+}
+/* 
+.trust-client{
+    border-radius: 4px;
+    padding: 15px;
+    box-shadow: 0 2px 15px rgb(0 0 0 / 10%);
+    border-radius: 15px;
+    border: 1px solid #E5E7E9;
+
+    border-radius: 15px;
+    border-left: 3px solid #4255a4;
+    border-right: 3px solid #4255a4;
+} */
 .trust-img {
     float: left;
     padding-right: 15px;

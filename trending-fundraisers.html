@@ -23,7 +23,7 @@
     <link rel="stylesheet" href="assets/css/slick.css">
     <link rel="stylesheet" href="assets/css/nice-select.css">
     <link rel="stylesheet" href="assets/css/style.css">
-    
+
 </head>
 
 <body>
@@ -514,9 +514,7 @@
   </div>
 </div>
 </section>
-
-
-       
+     
           </div>
 
 
@@ -528,7 +526,7 @@
       <a href="#"><img class="padd-r-10" src="assets/img/credit-card.svg"><br>credit/debit cards</a>
       <a href="#"><img class="padd-r-10" src="assets/img/internet.svg"><br/>Net banking</a>
       <a href="#"><img class="padd-r-10" src="assets/img/upi-icon.svg"><br/>UPI</a>
-      <a href="#"><img class="padd-r-10" src="assets/img/bank-transfer.png"><br/>Bank Transfer</a>
+      <a href="#"><img class="padd-r-10" src="assets/img/wallet.svg"><br/>wallets</a>
 
     </div>
 
@@ -825,7 +823,7 @@
                    <button class="action-button shadow animate blue">1000</button>
                </div>
                <div class="single_doonate"> 
-                <button class="action-button shadow animate blue">1500</button>
+                <button class="action-button shadow animate blue active">1500</button>
                </div>
                <div class="single_doonate"> 
                 <button class="action-button shadow animate blue">3000</button>
@@ -879,9 +877,13 @@
       
         <div class="form-group">
             <div class="d-flex align-items-center justify-content-center donate-btn-div">
-              <a href="fundraiser-form.html" class="shadow animate blue donate-btn-mini">Donate Now</a>
+              <a href="#payment-portal" data-toggle="modal" class="shadow animate blue donate-btn-mini">Pay ₹ 1500</a>
+             
             </div>
-          
+            <div class="d-flex align-items-center justify-content-center verified-payment">
+              <a><i class="fas fa-lock"></i><h5 class="text-dark">Verified via Donor team.</h5></a>
+            </div>
+         
         </div>
     </form>
   
@@ -890,6 +892,148 @@
             </div>
         </div>
     </div>
+</div>   
+
+<div id="payment-portal" class="modal fade">
+  <div class="modal-dialog modal-login">
+      <div class="modal-content">
+         
+          <div class="modal-body start">
+               <div class="modal-header">              
+           
+              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+          </div>
+            <div class="signup-form">
+  <form action="/examples/actions/confirmation.php" method="post">
+      <h2>Choose a Payment Method.</h2>
+      <hr>
+      <div class="donation-methods d-flex justify-content-between">
+        <a href="#"><img class="padd-r-10" src="assets/img/credit-card.svg"><br>credit/debit cards</a>
+        <a href="#"><img class="padd-r-10" src="assets/img/internet.svg"><br/>Net banking</a>
+        <a href="#"><img class="padd-r-10" src="assets/img/upi-icon.svg"><br/>UPI</a>
+        <a href="#"><img class="padd-r-10" src="assets/img/wallet.svg"><br/>wallets</a>
+  
+      </div>
+
+      <div class="tab-content">
+        <!-- credit card info-->
+        <div id="credit-card" class="tab-pane fade show active pt-3">
+            <form role="form">
+                <div class="form-group"> <label for="username">
+                        <h6>Card Owner</h6>
+                    </label> <input type="text" name="username" placeholder="Card Owner Name" required class="form-control "> </div>
+                <div class="form-group"> <label for="cardNumber">
+                        <h6>Card number</h6>
+                    </label>
+                    <div class="input-group"> <input type="text" name="cardNumber" placeholder="Valid card number" class="form-control " required>
+                        <div class="input-group-append"> <span class="input-group-text text-muted"> <i class="fab fa-cc-visa mx-1"></i> <i class="fab fa-cc-mastercard mx-1"></i> <i class="fab fa-cc-amex mx-1"></i> </span> </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-8">
+                        <div class="form-group"> <label><span class="hidden-xs">
+                                    <h6>Expiration Date</h6>
+                                </span></label>
+                            <div class="input-group"> <input type="number" placeholder="MM" name="" class="form-control" required> <input type="number" placeholder="YY" name="" class="form-control" required> </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="form-group mb-4"> <label data-toggle="tooltip" title="Three digit CV code on the back of your card">
+                                <h6>CVV <i class="fa fa-question-circle d-inline"></i></h6>
+                            </label> <input type="text" required class="form-control"> </div>
+                    </div>
+                </div>
+                <div class="card-footer"> <button type="button" class="subscribe btn btn-primary btn-block shadow-sm"> Confirm Payment </button>
+            </form>
+        </div>
+     <!-- credit card info end-->
+         <!-- bank transfer info -->
+    <div id="net-banking" class="tab-pane pt-3">
+      <div class="donation-methods d-flex justify-content-between">
+        <a href="#credit-card"><img class="padd-r-10" src="assets/img/axis.svg"><br></a>
+        <a  href="net-banking"><img class="padd-r-10" src="assets/img/Yes-Bank-01.svg"><br/></a>
+        <a  href="#nav-tab-bank"><img class="padd-r-10" src="assets/img/Central-Bank.svg"><br/></a>
+        <a href="#"><img class="padd-r-10" src="assets/img/Union-Bank-of-India-01.svg"><br/></a>
+      </div>
+      <div class="donation-methods d-flex justify-content-between">
+        <a href="#credit-card"><img class="padd-r-10" src="assets/img/Citibank-01.svg"><br></a>
+        <a  href="net-banking"><img class="padd-r-10" src="assets/img/SBI-01.svg"><br/></a>
+        <a  href="#nav-tab-bank"><img class="padd-r-10" src="assets/img/axis.svg"><br/></a>
+        <a href="#"><img class="padd-r-10" src="assets/img/Yes-Bank-01.svg"><br/></a>
+      </div>
+      <div class="form-group "> <label for="Select Your Bank">
+              <h6>Select your Bank</h6>
+          </label> <select class="form-control" id="ccmonth">
+              <option value="" selected disabled>--Please select your Bank--</option>
+              <option>Bank 1</option>
+              <option>Bank 2</option>
+              <option>Bank 3</option>
+              <option>Bank 4</option>
+              <option>Bank 5</option>
+              <option>Bank 6</option>
+              <option>Bank 7</option>
+              <option>Bank 8</option>
+              <option>Bank 9</option>
+              <option>Bank 10</option>
+          </select> </div>
+      <div class="form-group">
+          <p> <button type="button" class="btn btn-primary "><i class="fas fa-mobile-alt mr-2"></i> Proceed Pyment</button> </p>
+      </div>
+      <p class="text-muted">Note: After clicking on the button, you will be directed to a secure gateway for payment. 
+        </p>
+  </div> <!-- Net banking End -->
+  <!-- Start UPI-->
+  <div id="upi" class="tab-pane pt-3">
+    <div class="card box-shadow">
+       <header class="card-header green-bg">
+
+        <a href="class=" data-toggle="modal" data-target="#contact-details"><h6 class="title" style="text-align:center;">Donate via GooglePay/PhonePe/BharatPe</h6></a></header>
+      <div class="card-body">
+        <div class="donation-methods d-flex justify-content-between">
+          <a href="#"><img class="padd-r-10" src="assets/img/gpay.svg"><br></a>
+          <a href="#"><img class="padd-r-10" src="assets/img/phonepe.png"><br/></a>
+          <a href="#"><img class="padd-r-10" src="assets/img/bharatpe.png"><br/></a>
+          <a href="#"><img class="padd-r-10" src="assets/img/paytm.svg"><br/></a>
+        </div>
+        <p class="text-center">
+          <img src="assets/img/upiscan.jpg">
+      </p>
+        <button type="button" class="btn btn-lg btn-block">supportsave35@yesbankltd</button>
+      </div>
+    </div>
+</div>
+
+  <!-- End -->
+   <!-- Start Paytm-->
+   <div id="paytm_wallet" class="tab-pane pt-3">
+   <div class="card box-shadow">
+    <header class="card-header green-bg">
+<h6 class="title" style="text-align:center;">Scan using Paytm.</h6>
+   <div class="card-body">
+     <div class="donation-methods d-flex justify-content-between">
+       <a href="#"><img class="padd-r-10" src="assets/img/paytm2.svg"><br></a>
+     </div>
+     <p class="text-center">
+       <img src="assets/img/upiscan.jpg">
+   </p>
+     <button type="button" class="btn btn-lg btn-block">Paytm No.: 81307XXXX</button>
+   </div>
+ </div>
+ </div>
+
+
+<!-- End -->
+    </div> 
+   
+
+
+  </form>
+
+</div>            
+             
+          </div>
+      </div>
+  </div>
 </div>   
 
 
@@ -969,6 +1113,7 @@
 <!-- Jquery Plugins, main Jquery -->    
 <script src="./assets/js/plugins.js"></script>
 <script src="./assets/js/main.js"></script>
+
 
 <script>
     $(document).ready(function(){
@@ -1056,6 +1201,23 @@ function showSlides(n) {
   captionText.innerHTML = dots[slideIndex-1].alt;
 }
 </script>
+
+<script>
+  $(document).ready(function() { 
+            $('nav a').click(function() { 
+                $('nav a').removeClass("active"); 
+                $(this).addClass("active"); 
+            }); 
+        }); 
+</script>
+<script> 
+        $(document).ready(function() { 
+            $('button').click(function() { 
+                $('button.action-button.shadow.animate.blue.active').removeClass("active"); 
+                $(this).addClass("active"); 
+            }); 
+        }); 
+    </script> 
 </body>
 </html>
 
