@@ -193,6 +193,31 @@ margin: 10px 0;
 .other-amount-btn .action-button{
     float: none;
 }
+
+.tipping-section{
+  background-color: #ffcc53 !important;
+    text-align: center;
+    padding: 8px;
+}
+
+.tipping-message{
+  margin-bottom: 5px;
+  font-size: 13px;
+  color: #000;
+}
+.tip-label p{
+  margin-bottom: 5px;
+  font-size: 15px;
+  color: #000;
+}
+.tipping-section .nice-select{
+  height: 30px;
+  font-size: 13px;
+    line-height: 30px;
+}
+.tipping-section .nice-select:after{
+  top: 10px;
+}
 .campaigner-beneficiary{
    margin: 10px 0;
 }
@@ -365,6 +390,13 @@ margin: 10px 0;
 }
 .whatsapp-share{
     background-color: #25d366;
+}
+.twitter-share{
+  background-color: #1DA1F2;
+}
+
+.linkedin-share{
+  background-color: #0e76a8;
 }
 
 
