@@ -228,33 +228,33 @@
 
 <div class="container campaigner-beneficiary">
   <div class="row justify-content-center">
-      <div class="col-md-5 campaigner-block mr-1">
+      <div class="col-6 col-md-5 campaigner-block mr-1">
           <div class="row mt-10">
-               <div class="col-md-2">         
+               <div class="col-2 col-md-2">         
                 <p class="mob-text-center"><img class="img-circle img-bordered-sm" src="assets/img/user-1.jpg"></p>
                </div>
-               <div class="col-md-10">
+               <div class="col-10 col-md-10">
                     <div class="campaigner-details">
                       <a><h5 class="text-dark">Campaigner</h5><i class="fas fa-check-circle green-t" id=""></i></a>
             
-                      <h3>Deepak Chauhan</h3>
-                      <p>Save Children Save India.</p>
-                      <p class="city-detais"><i class="fas fa-map-marker-alt"></i>&nbsp;Delhi</p>
+                      <h3>Deepak</h3>
+                      <p class="d-none d-sm-none d-md-block">Save Children Save India.</p>
+                      <p class="d-none d-sm-none d-md-block city-detais "><i class="fas fa-map-marker-alt"></i>&nbsp;Delhi</p>
                   </div>
                 </div>
           </div>         
       </div>
-      <div class="col-md-5 beneficiary-block ml-1">
+      <div class="col-6 col-md-5 beneficiary-block ml-1">
         <div class="row mt-10">
-              <div class="col-md-2"> 
+              <div class="col-2 col-md-2"> 
               <p class="mob-text-center"><img class="img-circle img-bordered-sm" src="assets/img/user-1.jpg"></p>
               </div>
-              <div class="col-md-10">
+              <div class="col-10 col-md-10">
                   <div class="beneficiary-details">
                   <a><h5 class="text-dark">Beneficiary</h5><i class="fas fa-check-circle green-t" id=""></i></a>
                   <h3>Rishabh</h3>
-                  <p>Help us in tough times.</p>
-                  <p class="city-detais"><i class="fas fa-map-marker-alt"></i>&nbsp;Mumbai</p>
+                  <p class="d-none d-sm-none d-md-block">Help us in tough times.</p>
+                  <p class="d-none d-sm-none d-md-block city-detais"><i class="fas fa-map-marker-alt"></i>&nbsp;Mumbai</p>
                   </div>
               </div>
         </div> 
@@ -450,10 +450,10 @@
           <header class="card-contribute green-bg"><a href="#donationModal" class="trigger-btn" data-toggle="modal"><h6 class="title">Donate Now</h6></a></header>
         </article>
         <div class="donation-methods d-flex justify-content-between">
-          <a href="#"><img class="padd-r-10" src="assets/img/credit-card.svg"><br>credit/debit cards</a>
-          <a href="#"><img class="padd-r-10" src="assets/img/internet.svg"><br/>Net banking</a>
-          <a href="#"><img class="padd-r-10" src="assets/img/upi-icon.svg"><br/>UPI</a>
-          <a href="#"><img class="padd-r-10" src="assets/img/wallet.svg"><br/>wallets</a>
+          <a href="#"><img class="padd-r-10" src="assets/img/credit-card.svg"><br><span class="d-md-none d-lg-block">credit/debit cards</span></a>
+          <a href="#"><img class="padd-r-10" src="assets/img/internet.svg"><br/><span class="d-md-none  d-lg-block">Net banking</span</a>
+          <a href="#"><img class="padd-r-10" src="assets/img/upi-icon.svg"><br/><span class="d-md-none  d-lg-block">UPI</span></a>
+          <a href="#"><img class="padd-r-10" src="assets/img/wallet.svg"><br/><span class="d-md-none  d-lg-block">wallets</span></a>
         </div>
 
         <div class="card-body iconfont text-center"> 
@@ -913,14 +913,18 @@
               <div class="d-flex align-items-center justify-content-center show-tip-input">
                 <div class="col s5 l3 offset-l1 tip-label"> <p>Include a tip of</p></div>
                 <div class="col s7 l5 offset-l2 no-left-pad tip-input">
-                  <div class="input-field col s12 "><div class="select-wrapper">
+                  <div class="input-field col s12 ">
+                    <div class="select-wrapper">
                       <select id="tipPercentageAmount" tabindex="-1">
+                        <option value="00.00">0% (₹ 00.00)</option>
                         <option value="200.00">5% (₹ 200.00)</option>
                         <option value="250.00">10% (₹ 250.00)</option>
                         <option value="300.00">12% (₹ 300.00)</option>
                         <option value="375.00">15% (₹ 375.00)</option>
                         <option value="other">Other</option></select>
-                      </div><label> </label><input type="hidden" name="tipPercentageAmount" value="375.00"></div>
+                      </div>
+                      <label></label><input type="hidden" name="tipPercentageAmount" value="375.00">
+                    </div>
                     </div>
               </div>
           </div>

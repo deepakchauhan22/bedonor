@@ -247,10 +247,32 @@ margin: 10px 0;
     display: inline;
  }
 
+
+
+
+ @media (min-width: 200px) and (max-width: 575px) {
+  .campaigner-beneficiary {
+      text-align: center;
+      margin: 5px 
+  }
+}
+  @media (min-width: 310px) and (max-width: 400px) {
+    .campaigner-block, .beneficiary-block{
+     min-width: 65%;
+    }
+  }
+    @media (min-width: 200px) and (max-width: 309px) {
+      .campaigner-block, .beneficiary-block{
+       min-width: 80%;
+      }
+    }
  @media (min-width: 200px) and (max-width: 575px) {
     .campaigner-beneficiary {
         text-align: center;
         margin: 5px 
+    }
+    .campaigner-details a, .beneficiary-details a{
+      margin-left: 20px;
     }
   }
  @media (min-width: 576px) and (max-width: 767.98px) {
@@ -260,6 +282,16 @@ margin: 10px 0;
   }
   
   @media (min-width: 768px) and (max-width: 991.98px) {
+
+    .campaigner-details, .beneficiary-details{
+      margin-left: 20px;
+    }
+    .fund-price-donor span {
+      font-size: 30px!important;
+  }
+  .fund-price-days , .fund-price-supporters {
+    font-size: 10px;
+  }
     .slide-box img {
       -ms-flex: 0 0 33.3333%;
       flex: 0 0 33.3333%;
@@ -269,6 +301,10 @@ margin: 10px 0;
   
   @media (min-width: 992px)
   {
+    .campaigner-details, .beneficiary-details{
+      margin-left: 10px;
+    }
+   
     .slide-box img {
       -ms-flex: 0 0 25%;
       flex: 0 0 25%;
@@ -514,5 +550,40 @@ margin: 10px 0;
 @media only screen and (max-width: 600px)
 {
 .modal-dialog ,.payment-modal{
-    width: 430px!important;
+    width: 430px;
 }}
+
+
+
+
+
+@media (min-width: 105px) and (max-width: 500px) {
+  .modal-dialog {
+    width: auto!important;
+  }
+  .tip-label, .tip-input{
+    padding: 0px;
+    margin: 0px;
+   }
+   .tip-input .input-field{
+     padding: 5px;
+    }
+}
+
+@media (min-width: 305px) and (max-width: 500px) {
+  .action-button {
+    padding: 5px 20px;
+    margin: 0px 1px 5px 0px;
+  }
+ 
+}
+
+
+@media (min-width: 200px) and (max-width: 304px) {
+  .action-button {
+    font-size: 11px;
+    position: relative;
+    padding: 5px 15px;
+    margin: 0px 1px 5px 0px;
+}
+}
