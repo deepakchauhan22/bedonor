@@ -547,6 +547,12 @@ margin: 10px 0;
   padding-left: 13px !important;
 }
 
+.supp {
+  box-shadow: none;
+  background: none; 
+  margin-top: none;
+}
+
 @media only screen and (max-width: 600px)
 {
 .modal-dialog ,.payment-modal{

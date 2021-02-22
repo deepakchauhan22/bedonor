@@ -203,25 +203,25 @@
           <div class="col-md-8">
               <h1 style="font-size: 28px; margin-bottom: 10px;">I Need Your Urgent Support For My Atrial Septal Defect Treatment</h1> 
                <!-- Full-width images with number text -->
-<div class="main-slider">
-          <div class="mySlides" style="display: block;">
-          
-              <img src="assets/img/trending-fundraisers-1.jpg" style="width: 100%">
-          </div>
+                <div class="main-slider">
+                          <div class="mySlides" style="display: block;">
+                          
+                              <img src="assets/img/trending-fundraisers-1.jpg" style="width: 100%">
+                          </div>
 
-          <div class="mySlides" style="display: none;">
-          
-          <img src="assets/img/trending-fundraisers-2.jpg" style="width: 100%">
-          </div>
-          <!-- Next and previous buttons -->
-          <a class="prev" onclick="plusSlides(-1)">❮</a>
-          <a class="next" onclick="plusSlides(1)">❯</a>
+                          <div class="mySlides" style="display: none;">
+                          
+                          <img src="assets/img/trending-fundraisers-2.jpg" style="width: 100%">
+                          </div>
+                          <!-- Next and previous buttons -->
+                          <a class="prev" onclick="plusSlides(-1)">❮</a>
+                          <a class="next" onclick="plusSlides(1)">❯</a>
 
-          <!-- Image text -->
-          <div class="caption-container">
-            <p id="caption"></p>
-          </div>
-</div>
+                          <!-- Image text -->
+                          <div class="caption-container">
+                            <p id="caption"></p>
+                          </div>
+                </div>
 
 
           <!-- campaigner-beneficiary block added by deepak -->
@@ -577,10 +577,7 @@
         <div class="call-now"><p class="call-left"><img src="assets/img/user-don.png"></p>
         <p class="top3"><span class="spcall">5000 Supporters</span>
         </p></div></header>
-          <div class="supp">
-            <h2>DONATED VIA BANK / PAYTM / UPI ?</h2>
-            <a href="#">Click Here <span>if you can't find your donation listed below.</span></a>
-            </div>
+       
               <div class="filter-content">
                 <div class="list-group list-group-flush">
                   <a href="#" class="list-group-item d-flex flex-row"><div class="padd-r-10"><img class="img-circle img-bordered-sm" src="assets/img/user-1.jpg"></div><span class="donor-name">Aarush Sharma</span><strong class="don-amout">₹ 5,000</strong></a>
@@ -601,7 +598,18 @@
                   </ul> 
                 </div>  
               </div>
-            </article>
+     </article>
+
+<br>
+<hr>
+    
+      <div class="supp">
+        <h2>Donated to this campaign via Bank transfer/UPI/QR Code?</h2>
+        <a href="#donationReceipt" class="btn trigger-btn" data-toggle="modal">Click Here</a>
+        <p>if you can't find your donation listed.</p>
+        </div>
+     
+
                     </div>
                     
             </div>
@@ -1118,8 +1126,94 @@
       </div>
   </div>
 </div>   
-
           <!-- Payment Model ended by deepak -->
+
+                    <!--Donation Receipt Model added by deepak -->
+
+<div id="donationReceipt" class="modal fade">
+  <div class="modal-dialog modal-login">
+      <div class="modal-content">
+         
+          <div class="modal-body start">
+               <div class="modal-header">              
+           
+              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+          </div>
+            <div class="signup-form">
+  <form action="/examples/actions/confirmation.php" method="post">
+      <h2>Made a Donation?</h2>
+      <hr>
+     
+
+      <h5 class="text-center text-dark mb-4">Please Enter Your Details.</h5>  
+
+
+      <div class="form-group">
+          <div class="input-group">
+              <div class="input-group-prepend">
+                  <span class="input-group-text">
+                      <span class="fa fa-user"></span>
+                  </span>                    
+              </div>
+              <input type="text" class="form-control" name="username" placeholder="Name" required="required">
+          </div>
+      </div>
+
+      <div class="form-group">
+          <div class="input-group">
+              <div class="input-group-prepend">
+                  <span class="input-group-text">
+                      <i class="fa fa-phone"></i>
+                  </span>                    
+              </div>
+              <input type="text" class="form-control" name="phone" placeholder="Phone No." required="required">
+          </div>
+      </div>
+
+      <div class="form-group">
+          <div class="input-group">
+              <div class="input-group-prepend">
+                  <span class="input-group-text">
+                      <i class="fa fa-paper-plane"></i>
+                  </span>                    
+              </div>
+              <input type="email" class="form-control" name="email" placeholder="Email Address" required="required">
+          </div>
+      </div>
+      
+      <div class="form-group">
+        <div class="input-group">
+            <div class="input-group-prepend">
+                <span class="input-group-text">
+                    <i class="fa fa-credit-card"></i>
+                </span>                    
+            </div>
+            <input type="text" class="form-control" name="email" placeholder="Transaction ID" required="required">
+        </div>
+    </div>
+
+    
+    
+      <div class="form-group">
+          <div class="d-flex align-items-center justify-content-center donate-btn-div">
+            <a href="#payment-portal" data-toggle="modal" class="shadow animate blue donate-btn-mini">Get Receipt</a>
+           
+          </div>
+          <div class="d-flex align-items-center justify-content-center verified-payment">
+            <a><i class="fas fa-lock"></i><h5 class="text-dark">Verified via Donor team.</h5></a>
+          </div>
+       
+      </div>
+  </form>
+
+</div>            
+             
+          </div>
+      </div>
+  </div>
+</div>   
+
+                    <!--Donation Receipt Model ended by deepak -->
 
   <!-- Scroll Up -->
   <div id="back-top" >
