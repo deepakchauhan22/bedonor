@@ -228,6 +228,10 @@ hr {
 .overlay1 {
     position: relative;
     z-index: 1;
+    border-left: 12px solid #F7CA60;
+    border-right:  12px solid #F7CA60;
+    border-top:  12px solid#F7CA60;
+  
 }
 .overlay1::before {
     position: absolute;
