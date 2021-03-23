@@ -228,9 +228,6 @@ hr {
 .overlay1 {
     position: relative;
     z-index: 1;
-    border-left: 12px solid #F7CA60;
-    border-right:  12px solid #F7CA60;
-    border-top:  12px solid#F7CA60;
   
 }
 .overlay1::before {
@@ -8400,10 +8397,7 @@ p.top3 {
     color: #FFFFFF !important;
     border-radius: 5px;
     padding: 3px 10px;
-    #shopify-section-header {
-        position: relative;
-        z-index: 1;
-    }
+}
     .doubly-wrapper {
         margin-right: 10px;
     }
@@ -8429,8 +8423,12 @@ p.top3 {
     }
    
 
-}
 
+
+#shopify-section-header {
+    position: relative;
+    z-index: 1;
+}
 @media only screen and (max-width: 600px){
  
  .trust-img img {
